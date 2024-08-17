@@ -7,7 +7,7 @@ from cdk_art_data.cdk_art_data_stack import CdkArtDataStack
 
 
 app = cdk.App()
-CdkArtDataStack(app, "CdkArtDataStack",
+CdkArtDataStack(app, 'CdkArtDataStack',
     env=cdk.Environment(account=os.getenv('CDK_DEFAULT_ACCOUNT'), region=os.getenv('CDK_DEFAULT_REGION')),
     )
 

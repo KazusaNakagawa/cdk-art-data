@@ -30,13 +30,14 @@ $ curl -X POST <対象url> \
 ### Check DynamoDB
 
 ```bash
+# syntax
 aws dynamodb scan \
     --table-name <YourTableName> \
     --region <your-region>
 
 # ex
 aws dynamodb scan \
-    --table-name CdkArtDataStack-UserDataTable{{...}} \
+    --table-name user-data-table \
     --region ap-northeast-1
 
 # output

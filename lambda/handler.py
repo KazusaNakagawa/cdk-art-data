@@ -35,7 +35,7 @@ def handle_post(body):
         # POSTリクエストのデータを取得
         user_id = body['user_id']
         art_data = body['art_data']  # Base64でエンコードされた画像データ
-        timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
 
         # Base64でエンコードされた画像データをデコード
         image_data = base64.b64decode(art_data)
